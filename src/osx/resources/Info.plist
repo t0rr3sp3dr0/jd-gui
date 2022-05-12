@@ -146,7 +146,7 @@
 		<key>JavaX</key>
 		<dict>
 			<key>MainClass</key>					<string>org.jd.gui.OsxApp</string>
-			<key>JVMVersion</key>					<string>1.8+</string>
+			<key>JVMVersion</key>					<string>17</string>
 			<key>ClassPath</key>					<string>\$JAVAROOT/${JAR}</string>
 			<key>WorkingDirectory</key>				<string>\$JAVAROOT</string>
 			<key>Properties</key>
@@ -154,7 +154,7 @@
 				<key>apple.laf.useScreenMenuBar</key>
 				<string>true</string>
 			</dict>
-			<key>VMOptions</key>					<string>-Xms512m</string>
+			<key>VMOptions</key>					<string>-Xms512m --add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED</string>
 		</dict>
 	</dict>
 </plist>
